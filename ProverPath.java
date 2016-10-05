@@ -7,16 +7,8 @@
  */
 
 public class ProverPath {
-	public static final String FullPath = "/Users/G2/Documents/Logic/project/code/LADR-2009-11A/bin/prover9";
-}
-
-
-
-/*
- * public class ProverPath {
 	public static final String FullPath = "/your/path/to/prover9";
 }
 
- * 
- */
+
 
