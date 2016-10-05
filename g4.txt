@@ -1,0 +1,24 @@
+Elements: f, g, h, i
+
+Relation: *
+
+Facts:
+(f,f,f)
+(f,g,g)
+(f,h,h)
+(f,i,i)
+(g,f,g)
+(g,g,h)
+(g,h,i)
+(g,i,f)
+(h,f,h)
+(h,g,i)
+(h,h,f)
+(h,i,g)
+(i,f,i)
+(i,g,f)
+(i,h,g)
+(i,i,h)
+end
+
+% Cyclic 4-group
