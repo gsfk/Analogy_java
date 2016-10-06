@@ -61,7 +61,7 @@ public class AlgebraicStructure{
 		//so as long as we ask about elements of the domain, we should always find facts
 
 		//TODO: exception?
-		System.out.println("fact not found, x = " + a + ", y = " + b);
+		//System.out.println("fact not found, x = " + a + ", y = " + b);
 
 		return "";	
 	}
