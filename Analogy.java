@@ -1,54 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
 
-
-/* TODO: 
- * 
- * user install instructions
- * 
- * package?
- * 
- * parser comment handling
- * parser error throw if "end" missing
- * 
- * "fact not found" exception (alg_struct)
- * 
- * 
- * check default values for quantifiers -> bool map,
- * code counts on it defaulting to false
- * 
- * consolidate all four "leftIdentityRightInverse" etc methods... almost all duplicate code. 
- * 
- * user prover location solutions
- * 
- * debugging: try all one-file, two-file, no-prover combos
- * 
- * prover bug:
- * try ProcessBuilder (java 5+), although may have the same issues 
- * also StreamGobbler?
- * 
- * weird mix of for : range and for (int i...), switch for range where possible
- * 
- * 
- * 
- * 
- */
-
-
-/* NOTES:
- *  
- * size of args when no extra args is zero (one less than C)
- * 
- * 	predicates are passed as "Predicate" enum values. 
- * Predicate p1 = Predicate.P1;
- * 
- * 
- */
-
-
-
-
-
 public class Analogy {
 
 	public static void main (String[] args){
@@ -272,7 +224,7 @@ public class Analogy {
 				System.out.println("\nFormulas shared between minimal sets:");
 				formulaCount = 1;
 				for (Formula f1 : formulas){
-					for (Formula f2 : formulas){
+					for (Formula f2 : formulas2){
 						if (f1.includeInMinimalSet && f2.includeInMinimalSet && f1.prettyName.equals(f2.prettyName)){
 							sharedAxioms = true;
 							System.out.println(formulaCount + ": " + f1.prettyName);
