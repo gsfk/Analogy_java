@@ -3,9 +3,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class AlgebraicStructure{
+//Class to represent the domain, most of the search code also resides here
 
-	// algebraic structure in an object with these properties:
+
+
+
+public class AlgebraicStructure{
 
 	//domain elements
 	private ArrayList<String> elements;
@@ -34,13 +37,6 @@ public class AlgebraicStructure{
 		numFacts = facts.size();
 		extraProperties= new HashMap<Properties, Boolean>(); 
 	}
-
-	//no params in constrctor?
-
-	//setters:
-	//add element to elements table
-	//add fact to fact table
-	//set relation
 
 
 	public String factTableLookup(String a, String b){
@@ -670,6 +666,7 @@ public class AlgebraicStructure{
 	
 
 	//helper functions
+
 	public boolean isLeftIdentityElement(String iden){
 		String y;
 		for (int i = 0; i< this.order; i++){

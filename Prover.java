@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 
 /*
- * Class to interact with an external prover. This implementation uses Prover9, https://www.cs.unm.edu/~mccune/mace4/.
+ * Class to interact with an external prover. This implementation uses Prover9, https://www.cs.unm.edu/~mccune/mace4/
  * 
  */
 
@@ -50,20 +50,6 @@ public class Prover {
 	}
 
 
-	/*
-	 Prover9 return values:
-	 0      proof found
-	 1      fatal error
-	 2      no proof found, premises exhausted
-	 3      max memory hit
-	 4      max time hit
-	 5      max given hit
-	 6      max kept hit
-	 7      Prover9 terminated
-	 101    Prover9 crashed
-
-	 */
-
 
 	public static void invokeProver(ArrayList<Formula> formulas, String filename) throws IOException {
 		//prover return value
@@ -75,7 +61,6 @@ public class Prover {
 
 		System.out.println("sending " + numFormulas + " formulas to prover (" + filename + ")");
 
-
 		//main loop: for each formula in the set, try to prove it from the others
 		for (int i = 0; i < numFormulas; i++){
 
@@ -86,7 +71,7 @@ public class Prover {
 			outfile.createNewFile();
 
 			// --- build prover input file ---- //
-
+			
 			FileWriter fileOutput = new FileWriter(outfile); 
 
 			//stop after finding one proof (starts counting from zero)
@@ -98,7 +83,6 @@ public class Prover {
 			//suppress console output
 			fileOutput.write("set(quiet).\n");
 			fileOutput.write("clear(echo_input).\n");
-			
 			fileOutput.write("clear(print_initial_clauses).\n");
 			fileOutput.write("clear(print_given).\n");
 			fileOutput.write("clear(print_proofs).\n");

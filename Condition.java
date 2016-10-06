@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap; 
 
+//Class to represent predicates, 
+//code for brute force generation of all variable orderings for a predicate, 
+//formula generation code, substitution code for uniqueness quantifiers
+
 public class Condition{
 
 	public Predicate predicate;
@@ -275,11 +279,8 @@ public class Condition{
 		}
 	}	
 
-
-
-	//std::vector<Formula>& generate_formulas(std::vector<Condition*> predicates, Algebraic_structure g){
 	//input: array of Conditions, Alg structure g
-	//output: all true formulas (quant / predicate combinations)
+	//output: all true formulas (quantifier / predicate combinations)
 
 	public static ArrayList<Formula> generateFormulas (ArrayList<Condition> predicates, AlgebraicStructure g){
 		ArrayList<Formula> formulas = new ArrayList<Formula>();
@@ -369,9 +370,6 @@ public class Condition{
 
 		return formulas;
 	}
-
-
-
 
 
 
@@ -483,8 +481,6 @@ public class Condition{
 
 		return allPredicates;
 	}
-
-
 
 }
 
