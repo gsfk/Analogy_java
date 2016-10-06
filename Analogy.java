@@ -259,7 +259,7 @@ public class Analogy {
 
 
 	public static void userHelp(){
-		System.out.println("Usage: name any input files in command line arguments:");
+		System.out.println("\nUsage: name any input files in command line arguments:");
 		System.out.println("To find axioms for a single file: ./analogy yourfilename.txt");
 		System.out.println("To compare axioms for two structures, enter two file names: ./analogy file1 file2");
 		System.out.println("Requires Prover9 installation: https://www.cs.unm.edu/~mccune/mace4/download/");
