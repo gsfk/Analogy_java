@@ -58,6 +58,13 @@ public class Analogy {
 			secondFile = true;
 		}//end argument handling
 
+		//check prover connection
+		if (useProver && ProverPath.FullPath.equals("/your/path/to/prover9")){
+			System.err.println("*no path to prover*");
+			System.err.println("Change the prover path information in ProverPath.java. See instructions.pdf for more details");
+			return;
+		}
+
 		//-- operations for first file -- //
 
 		//generate domain from input
