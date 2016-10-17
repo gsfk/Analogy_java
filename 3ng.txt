@@ -1,0 +1,17 @@
+Elements: p, q, r
+
+Relation: *
+
+Facts:
+(p,p,p)
+(p,q,q)
+(p,r,r)
+(q,p,q)
+(q,q,q)
+(q,r,r)
+(r,p,r)
+(r,q,r)
+(r,r,r)
+end
+
+% 3 no-group, from "Two Ways of Analogy"
