@@ -2,8 +2,7 @@ Analogy, java version
 
 See instructions.pdf for full compilation and operation instructions. Requires installation of Prover9: https://www.cs.unm.edu/~mccune/mace4/download/
 
-
-Analogy takes groups and other finite algebraic structures as input, and outputs any axioms that apply to that structure. In particular it looks for claims of the form 
+Analogy implements a search for mathematical axioms suggested by Dirk Schlimm's paper "Two Ways of Analogy: Extending the Study of Analogies to Mathematical Domains" (Philosophy of Science 75 (April 2008) pp. 178–200). It takes groups and other finite algebraic structures as input, and outputs any axioms that apply to that structure. In particular it looks for claims of the form 
 
 	Q1 x Q2 y P(v1, v2, v3)
 	
